@@ -25,7 +25,7 @@ public class GameMap {
             map.put(node, m);
         }
 
-        System.out.println("Карты загружены");
+        System.out.println("Maps loaded");
     }
 
     public HashMap getMap()

@@ -7,6 +7,7 @@ import io.netty.channel.ChannelHandlerContext;
 import ru.devit.DB.DB_UserData;
 import ru.devit.DB.DB_UserPeasantWork;
 import ru.devit.DB.DB_UserResources;
+import ru.devit.events.Event;
 
 import java.util.Formatter;
 
@@ -22,6 +23,7 @@ public class User {
     private ChannelHandlerContext ctx = null;
     private Integer hashCode = 0;
     private int authorize = 0;
+    private Event event = null;
 
     public Integer getHashCode() {
         return hashCode;
@@ -50,6 +52,19 @@ public class User {
 
     public DB_UserResources getUserResources() {
         return userResources;
+    }
+
+    public float getUserResourceByRes( String resource )
+    {
+        switch (resource) {
+            case "wood" : return userResources.getWood();
+            case "gold" : return userResources.getGold();
+            case "grain" : return userResources.getGrain();
+            case "peasant" : return userResources.getPeasant();
+            case "soldiers" : return userResources.getPeasant();
+            case "mood" : return userResources.getMood();
+            default: return 0f;
+        }
     }
 
     public void setUserResources(DB_UserResources userResources) {

@@ -27,5 +27,6 @@
         <mapper resource="ru/devit/DB/mapper/DB_UserResources.xml"/>
         <mapper resource="ru/devit/DB/mapper/DB_UserPeasantWork.xml"/>
         <mapper resource="ru/devit/DB/mapper/DB_Map.xml"/>
+        <mapper resource="ru/devit/DB/mapper/DB_Config.xml"/>
     </mappers>
 </configuration>
