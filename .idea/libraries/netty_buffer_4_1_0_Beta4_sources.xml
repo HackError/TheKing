@@ -1,0 +1,43 @@
+<component name="libraryTable">
+  <library name="netty-buffer-4.1.0.Beta4-sources">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-buffer-4.1.0.Beta4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-codec-4.1.0.Beta4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-codec-http-4.1.0.Beta4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-codec-http2-4.1.0.Beta4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-codec-memcache-4.1.0.Beta4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-codec-socks-4.1.0.Beta4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-codec-stomp-4.1.0.Beta4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-common-4.1.0.Beta4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-example-4.1.0.Beta4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-handler-4.1.0.Beta4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-handler-proxy-4.1.0.Beta4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-resolver-4.1.0.Beta4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-tcnative-1.1.32.Fork1-linux-x86_64.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-transport-4.1.0.Beta4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-transport-rxtx-4.1.0.Beta4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-transport-sctp-4.1.0.Beta4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-transport-udt-4.1.0.Beta4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-buffer-4.1.0.Beta4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-codec-4.1.0.Beta4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-codec-http-4.1.0.Beta4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-codec-http2-4.1.0.Beta4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-codec-memcache-4.1.0.Beta4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-codec-socks-4.1.0.Beta4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-codec-stomp-4.1.0.Beta4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-common-4.1.0.Beta4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-example-4.1.0.Beta4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-handler-4.1.0.Beta4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-handler-proxy-4.1.0.Beta4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-resolver-4.1.0.Beta4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-tcnative-1.1.32.Fork1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-transport-4.1.0.Beta4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-transport-rxtx-4.1.0.Beta4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-transport-sctp-4.1.0.Beta4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIB/netty-4.1.0.Beta4/jar/netty-transport-udt-4.1.0.Beta4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

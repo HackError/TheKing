@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="userPW">
+    <resultMap id="result" type="ru.devit.DB.DB_UserPeasantWork">
+        <result property="user_id" column="user_id"/>
+        <result property="gold" column="gold"/>
+        <result property="grain" column="grain"/>
+        <result property="wood" column="wood"/>
+    </resultMap>
+
+    <select id="selectByUserId" parameterType="int" resultMap="result">
+        SELECT * FROM peasant_work WHERE user_id = #{uid}
+    </select>
+
+    <insert id="insert" parameterType="ru.devit.DB.DB_UserResources" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO peasant_work (user_id) VALUES (#{name});
+    </insert>
+
+    <update id="update" parameterType="ru.devit.DB.DB_UserResources">
+        UPDATE peasant_work
+        `gold` = #{gold},
+        `grain` = #{grain},
+        `wood` = #{wood},
+        WHERE user_id = #{id}
+    </update>
+
+</mapper>

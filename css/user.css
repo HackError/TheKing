@@ -1,0 +1,218 @@
+/*
+CSS пользовательский
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Ruslan+Display&subset=cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Philosopher:400,400italic&subset=cyrillic);
+
+body {
+    margin:0px;
+	font-family: 'Ruslan Display', cursive;
+	font-weight:200;
+	font-family: 'Philosopher', sans-serif;
+}
+
+.clr {
+	clear:both;
+}
+
+#logo {
+	position:absolute;
+	z-index:20;
+}
+
+/*ЮНИТЫ*/
+#map .unit {
+	width:32px;
+	height:32px;
+	position:absolute;
+}
+
+/*КАРТА*/
+#map .sq {
+	height:32px;
+	width:32px;
+	float:left;
+	cursor:pointer;
+}
+#map .owner {
+	
+	border:1px solid;
+}
+/*границы*/
+#map .bounds {
+	width:30px;
+	height:30px;
+	
+}
+#map .bL {
+	border-left:1px #1E90FF dashed;
+}
+#map .bR {
+	border-right:1px #1E90FF dashed;
+}
+#map .bT {
+	border-top:1px #1E90FF dashed;
+}
+#map .bB {
+	border-bottom:1px #1E90FF dashed;
+}
+
+#user_data {
+    position:absolute;
+    width:400px;
+    height:300px;
+    overflow: auto;
+    top:0px;
+    left:0px;
+    background:#fff;
+    padding:10px;
+    opacity: 0.8;
+	z-index:50;
+}   
+
+#eventDiv {
+    position:absolute;
+    width:600px;
+    height:400px;
+    overflow: auto;
+    top:0px;
+    left:0px;
+    background:#fff;
+    padding:10px;
+    opacity: 0.8;
+	z-index:60;
+}
+
+.glowSQ {
+	background:url('img/glowSQ.png');
+	width:32px;
+	height:32px;
+	position:absolute;
+	z-index:1;
+}
+
+/*СТРЕЛОЧКА*/
+
+	/*СТАНДАРТ*/
+	.arrow_box {
+		
+	}
+	.arrow_box:after, .arrow_box:before {
+		top: 100%;
+		left: 14px;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+	}
+
+	.arrow_box:after {
+		border-color: rgba(255, 255, 255, 0);
+		border-top-color: #ffffff;
+		border-width: 10px;
+		margin-left: -10px;
+	}
+	.arrow_box:before {
+		border-color: rgba(215, 255, 191, 0);
+		border-top-color: #d7ffbf;
+		border-width: 11px;
+		margin-left: -11px;
+	}
+	
+	/*СПРАВА*/
+	.arrow_box_right {
+
+	}
+	.arrow_box_right:after, .arrow_box:before {
+		top: 100%;
+		right: 10px;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+	}
+
+	.arrow_box_right:after {
+		border-color: rgba(255, 255, 255, 0);
+		border-top-color: #ffffff;
+		border-width: 10px;
+		margin-left: -10px;
+	}
+	.arrow_box_right:before {
+		border-color: rgba(215, 255, 191, 0);
+		border-top-color: #d7ffbf;
+		border-width: 11px;
+		margin-left: -11px;
+	}
+	
+	/*ВНИЗУ_СЛЕВА*/
+	.arrow_box_bleft {
+
+	}
+	.arrow_box_bleft:after, .arrow_box:before {
+		bottom: 100%;
+		left: 14px;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+	}
+
+	.arrow_box_bleft:after {
+		border-color: rgba(255, 255, 255, 0);
+		border-bottom-color: #ffffff;
+		border-width: 10px;
+		margin-left: -10px;
+	}
+	.arrow_box_bleft:before {
+		border-color: rgba(215, 255, 191, 0);
+		border-bottom-color: #d7ffbf;
+		border-width: 11px;
+		margin-left: -11px;
+	}
+	/*ВНИЗУ СПРАВА*/
+	.arrow_box_bright {
+
+	}
+	.arrow_box_bright:after, .arrow_box:before {
+		bottom: 100%;
+		right: 10px;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+	}
+
+	.arrow_box_bright:after {
+		border-color: rgba(255, 255, 255, 0);
+		border-bottom-color: #ffffff;
+		border-width: 10px;
+		margin-left: -10px;
+	}
+	.arrow_box_bright:before {
+		border-color: rgba(215, 255, 191, 0);
+		border-bottom-color: #d7ffbf;
+		border-width: 11px;
+		margin-left: -11px;
+	}
+	
+	.arrow_box, .arrow_box_right, .arrow_box_bleft, .arrow_box_bright {
+		min-width:200px;
+		min-height:100px;		
+		max-width:500px;
+		position: absolute;
+		background: #ffffff;
+		border: 3px solid #d7ffbf;
+		padding:20px;
+		z-index:2;	
+		
+	}

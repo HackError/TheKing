@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="UserData">
+    <resultMap id="result" type="ru.devit.DB.DB_UserData">
+        <result property="id" column="id"/>
+        <result property="email" column="email"/>
+        <result property="pwd" column="pwd"/>
+        <result property="name" column="name"/>
+        <result property="reg_date" column="reg_date"/>
+        <result property="last_logon" column="last_logon"/>
+        <result property="is_online" column="is_online"/>
+        <result property="avatar" column="avatar"/>
+    </resultMap>
+
+    <select id="selectAll" resultMap="result">
+        SELECT * FROM users;
+    </select>
+
+    <select id="selectById" parameterType="int" resultMap="result">
+        SELECT * FROM users WHERE users.id = #{id}
+    </select>
+
+    <select id="selectByLP" parameterType="ru.devit.DB.DB_UserData" resultMap="result">
+        SELECT * FROM users
+        WHERE users.email = #{email}
+        AND users.pwd = #{pwd}
+    </select>
+
+    <insert id="insert" parameterType="ru.devit.DB.DB_UserData" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO users (name) VALUES (#{name});
+    </insert>
+
+    <update id="update" parameterType="ru.devit.DB.DB_UserData">
+        UPDATE users
+        SET name = #{name}
+        WHERE id = #{id}
+    </update>
+
+</mapper>

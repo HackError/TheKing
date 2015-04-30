@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="userResources">
+    <resultMap id="result" type="ru.devit.DB.DB_UserResources">
+        <result property="user_id" column="user_id"/>
+        <result property="gold" column="gold"/>
+        <result property="grain" column="grain"/>
+        <result property="wood" column="wood"/>
+        <result property="peasant" column="peasant"/>
+        <result property="soldiers" column="soldiers"/>
+        <result property="money" column="money"/>
+        <result property="mood" column="mood"/>
+    </resultMap>
+
+    <select id="selectByUserId" parameterType="int" resultMap="result">
+        SELECT * FROM user_resources WHERE user_id = #{uid}
+    </select>
+
+    <insert id="insert" parameterType="ru.devit.DB.DB_UserResources" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO user_resources (user_id) VALUES (#{name});
+    </insert>
+
+    <update id="update" parameterType="ru.devit.DB.DB_UserResources">
+        UPDATE user_resources
+        `gold` = #{gold},
+        `grain` = #{grain},
+        `wood` = #{wood},
+        `peasant` = #{peasant},
+        `soldiers` = #{soldiers},
+        `money` = #{money},
+        `mood` = #{mood}
+        WHERE user_id = #{id}
+    </update>
+
+</mapper>

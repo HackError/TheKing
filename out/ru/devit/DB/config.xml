@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <typeAliases>
+        <typeAlias alias="userData" type="ru.devit.DB.DB_UserData"/>
+        <typeAlias alias="userResources" type="ru.devit.DB.DB_UserResources"/>
+        <typeAlias alias="DBMap" type="ru.devit.DB.DB_Map"/>
+    </typeAliases>
+
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <!--  connecting to Local MySql -->
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://devit.ru:3306/the_king"/>
+                <property name="username" value="king"/>
+                <property name="password" value="GtnhGthdsq"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper resource="ru/devit/DB/mapper/DB_UserData.xml"/>
+        <mapper resource="ru/devit/DB/mapper/DB_UserResources.xml"/>
+        <mapper resource="ru/devit/DB/mapper/DB_UserPeasantWork.xml"/>
+        <mapper resource="ru/devit/DB/mapper/DB_Map.xml"/>
+    </mappers>
+</configuration>
