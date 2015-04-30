@@ -113,6 +113,10 @@ public class Resources {
         public void setCount(float count) {
             this.count = count;
         }
+
+        public void setCount(int count) {
+            this.count = (float)count;
+        }
     }
 
 }

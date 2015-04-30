@@ -2,44 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9abea6f8-1ef5-4741-aad7-41a9433105cb" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\MailDisk\JavaProjects\TheKing\.idea\libraries\json_simple_1_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\MailDisk\JavaProjects\TheKing\out\ru\devit\DB\mapper\DB_Map (georgysPC conflicted copy 2015-04-29 08 58 51).xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/map/AStar.java" afterPath="$PROJECT_DIR$/src/ru/devit/map/AStar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/requestAnalizator/AnalizeRequest.java" afterPath="$PROJECT_DIR$/src/ru/devit/requestAnalizator/AnalizeRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/authorization/Authorization.java" afterPath="$PROJECT_DIR$/src/ru/devit/authorization/Authorization.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/JSONparser/Converter.java" afterPath="$PROJECT_DIR$/src/ru/devit/JSONparser/Converter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/ru/devit/DB/mapper/DB_Config.xml" afterPath="$PROJECT_DIR$/out/ru/devit/DB/mapper/DB_Config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/DB/DB_Map.java" afterPath="$PROJECT_DIR$/src/ru/devit/DB/DB_Map.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/ru/devit/DB/mapper/DB_Map.xml" afterPath="$PROJECT_DIR$/out/ru/devit/DB/mapper/DB_Map.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/DB/mapper/DB_Map.xml" afterPath="$PROJECT_DIR$/src/ru/devit/DB/mapper/DB_Map.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/DB/DB_UserData.java" afterPath="$PROJECT_DIR$/src/ru/devit/DB/DB_UserData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/ru/devit/DB/mapper/DB_UserData.xml" afterPath="$PROJECT_DIR$/out/ru/devit/DB/mapper/DB_UserData.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/DB/mapper/DB_UserData.xml" afterPath="$PROJECT_DIR$/src/ru/devit/DB/mapper/DB_UserData.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/DB/DB_UserPeasantWork.java" afterPath="$PROJECT_DIR$/src/ru/devit/DB/DB_UserPeasantWork.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/ru/devit/DB/mapper/DB_UserPeasantWork.xml" afterPath="$PROJECT_DIR$/out/ru/devit/DB/mapper/DB_UserPeasantWork.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/DB/mapper/DB_UserPeasantWork.xml" afterPath="$PROJECT_DIR$/src/ru/devit/DB/mapper/DB_UserPeasantWork.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/DB/DB_UserResources.java" afterPath="$PROJECT_DIR$/src/ru/devit/DB/DB_UserResources.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/ru/devit/DB/mapper/DB_UserResources.xml" afterPath="$PROJECT_DIR$/out/ru/devit/DB/mapper/DB_UserResources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/DB/mapper/DB_UserResources.xml" afterPath="$PROJECT_DIR$/src/ru/devit/DB/mapper/DB_UserResources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/map/GameMap.java" afterPath="$PROJECT_DIR$/src/ru/devit/map/GameMap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/Main.java" afterPath="$PROJECT_DIR$/src/ru/devit/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/DB/MapDAO.java" afterPath="$PROJECT_DIR$/src/ru/devit/DB/MapDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/DB/MyBatisConnectionFactory.java" afterPath="$PROJECT_DIR$/src/ru/devit/DB/MyBatisConnectionFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/map/PathFinder.java" afterPath="$PROJECT_DIR$/src/ru/devit/map/PathFinder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/JSONparser/Request.java" afterPath="$PROJECT_DIR$/src/ru/devit/JSONparser/Request.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/Server.java" afterPath="$PROJECT_DIR$/src/ru/devit/Server.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TheKing.iml" afterPath="$PROJECT_DIR$/TheKing.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/User.java" afterPath="$PROJECT_DIR$/src/ru/devit/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/DB/UserDAO.java" afterPath="$PROJECT_DIR$/src/ru/devit/DB/UserDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/Users.java" afterPath="$PROJECT_DIR$/src/ru/devit/Users.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/network/WebSocketServer.java" afterPath="$PROJECT_DIR$/src/ru/devit/network/WebSocketServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/network/WebSocketServerHandler.java" afterPath="$PROJECT_DIR$/src/ru/devit/network/WebSocketServerHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/network/WebSocketServerIndexPage.java" afterPath="$PROJECT_DIR$/src/ru/devit/network/WebSocketServerIndexPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/network/WebSocketServerInitializer.java" afterPath="$PROJECT_DIR$/src/ru/devit/network/WebSocketServerInitializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/ru/devit/DB/config.xml" afterPath="$PROJECT_DIR$/out/ru/devit/DB/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/DB/config.xml" afterPath="$PROJECT_DIR$/src/ru/devit/DB/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_mybatis_mybatis_3_2_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_mybatis_mybatis_3_2_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/events/Event.java" afterPath="$PROJECT_DIR$/src/ru/devit/events/Event.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/events/EventDebug.java" afterPath="$PROJECT_DIR$/src/ru/devit/events/EventDebug.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/gameObjects/Resources.java" afterPath="$PROJECT_DIR$/src/ru/devit/gameObjects/Resources.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/devit/events/TestEvent.java" afterPath="$PROJECT_DIR$/src/ru/devit/events/TestEvent.java" />
     </list>
     <ignored path="TheKing.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,22 +30,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/devit/Main.java">
+      <file leaf-file-name="TestEvent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/devit/events/TestEvent.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestEvent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/devit/events/TestEvent.java">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/devit/User.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding />
+              <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
+              <folding>
+                <element signature="e#1988#1989#0" expanded="true" />
+                <element signature="e#2038#2039#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Event.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/devit/events/Event.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="186" column="0" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#446#455#0" expanded="true" />
+                <element signature="e#540#550#0" expanded="true" />
+                <element signature="e#757#758#0" expanded="true" />
+                <element signature="e#789#790#0" expanded="true" />
+                <element signature="e#886#887#0" expanded="true" />
+                <element signature="e#918#919#0" expanded="true" />
+                <element signature="e#1041#1042#0" expanded="true" />
+                <element signature="e#1083#1084#0" expanded="true" />
+                <element signature="e#1616#1617#0" expanded="true" />
+                <element signature="e#1657#1658#0" expanded="true" />
+                <element signature="e#1784#1785#0" expanded="true" />
+                <element signature="e#1825#1826#0" expanded="true" />
+                <element signature="e#1928#1929#0" expanded="true" />
+                <element signature="e#1978#1979#0" expanded="true" />
+                <element signature="e#2105#2113#0" expanded="true" />
+                <element signature="e#2246#2247#0" expanded="true" />
+                <element signature="e#2281#2282#0" expanded="true" />
+                <element signature="e#2315#2316#0" expanded="true" />
+                <element signature="e#2352#2353#0" expanded="true" />
+                <element signature="e#2894#2895#0" expanded="true" />
+                <element signature="e#2938#2939#0" expanded="true" />
+                <element signature="e#4393#4394#0" expanded="true" />
+                <element signature="e#4712#4713#0" expanded="true" />
+                <element signature="e#4754#4755#0" expanded="true" />
+                <element signature="e#4800#4801#0" expanded="true" />
+                <element signature="e#4846#4847#0" expanded="true" />
+                <element signature="e#4886#4887#0" expanded="true" />
+                <element signature="e#4933#4934#0" expanded="true" />
+                <element signature="e#4986#4987#0" expanded="true" />
+                <element signature="e#5042#5043#0" expanded="true" />
+                <element signature="e#5089#5090#0" expanded="true" />
+                <element signature="e#5137#5138#0" expanded="true" />
+                <element signature="e#5198#5199#0" expanded="true" />
+                <element signature="e#5256#5257#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,9 +102,11 @@
       <file leaf-file-name="EventDebug.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ru/devit/events/EventDebug.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44795784">
-              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-              <folding />
+            <state vertical-scroll-proportion="0.33333334">
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,6 +159,10 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/src/ru/devit/map/PathFinder.java" />
+        <option value="$PROJECT_DIR$/src/ru/devit/gameObjects/Resources.java" />
+        <option value="$PROJECT_DIR$/src/ru/devit/events/EventDebug.java" />
+        <option value="$PROJECT_DIR$/src/ru/devit/events/Event.java" />
+        <option value="$PROJECT_DIR$/src/ru/devit/events/TestEvent.java" />
       </list>
     </option>
   </component>
@@ -369,6 +390,9 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\MailDisk\JavaProjects\TheKing\js" />
       <recent name="D:\MailDisk\JavaProjects\TheKing\" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="ru.devit.events" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="ru.devit.JSONparser" />
@@ -598,8 +622,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1928" height="1164" extended-state="7" />
-    <editor active="false" />
+    <frame x="-4" y="-4" width="1928" height="1164" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23734178" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -609,15 +633,16 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26566884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26566884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18854167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32834426" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39873418" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39850327" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -627,7 +652,6 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -643,7 +667,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -652,13 +676,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ru/devit/network/WebSocketServerInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/devit/network/WebSocketServerHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -812,7 +829,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -857,8 +874,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="96" column="40" selection-start-line="96" selection-start-column="40" selection-end-line="96" selection-end-column="40" />
           <folding>
-            <element signature="e#1535#1536#0" expanded="true" />
-            <element signature="e#1571#1572#0" expanded="true" />
+            <element signature="e#1535#1536#0" expanded="false" />
+            <element signature="e#1571#1572#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -940,9 +957,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -954,30 +969,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/devit/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/devit/Server.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/devit/events/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -986,14 +981,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="25" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/devit/gameObjects/Resources.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.8398268">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -1024,25 +1011,104 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/devit/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.044795785">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/devit/gameObjects/Resources.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.80441034">
+          <caret line="116" column="20" selection-start-line="116" selection-start-column="20" selection-end-line="116" selection-end-column="20" />
+          <folding>
+            <element signature="e#200#218#0" expanded="true" />
+            <element signature="e#2865#2866#0" expanded="true" />
+            <element signature="e#2900#2901#0" expanded="true" />
+            <element signature="e#3333#3334#0" expanded="true" />
+            <element signature="e#3382#3383#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.7.0_45/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="438" column="19" selection-start-line="438" selection-start-column="19" selection-end-line="438" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/devit/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
+          <folding>
+            <element signature="e#1988#1989#0" expanded="true" />
+            <element signature="e#2038#2039#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/devit/events/TestEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/devit/events/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="186" column="0" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#446#455#0" expanded="true" />
+            <element signature="e#540#550#0" expanded="true" />
+            <element signature="e#757#758#0" expanded="true" />
+            <element signature="e#789#790#0" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#1083#1084#0" expanded="true" />
+            <element signature="e#1616#1617#0" expanded="true" />
+            <element signature="e#1657#1658#0" expanded="true" />
+            <element signature="e#1784#1785#0" expanded="true" />
+            <element signature="e#1825#1826#0" expanded="true" />
+            <element signature="e#1928#1929#0" expanded="true" />
+            <element signature="e#1978#1979#0" expanded="true" />
+            <element signature="e#2105#2113#0" expanded="true" />
+            <element signature="e#2246#2247#0" expanded="true" />
+            <element signature="e#2281#2282#0" expanded="true" />
+            <element signature="e#2315#2316#0" expanded="true" />
+            <element signature="e#2352#2353#0" expanded="true" />
+            <element signature="e#2894#2895#0" expanded="true" />
+            <element signature="e#2938#2939#0" expanded="true" />
+            <element signature="e#4393#4394#0" expanded="true" />
+            <element signature="e#4712#4713#0" expanded="true" />
+            <element signature="e#4754#4755#0" expanded="true" />
+            <element signature="e#4800#4801#0" expanded="true" />
+            <element signature="e#4846#4847#0" expanded="true" />
+            <element signature="e#4886#4887#0" expanded="true" />
+            <element signature="e#4933#4934#0" expanded="true" />
+            <element signature="e#4986#4987#0" expanded="true" />
+            <element signature="e#5042#5043#0" expanded="true" />
+            <element signature="e#5089#5090#0" expanded="true" />
+            <element signature="e#5137#5138#0" expanded="true" />
+            <element signature="e#5198#5199#0" expanded="true" />
+            <element signature="e#5256#5257#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/devit/events/EventDebug.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44795784">
-          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-          <folding />
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

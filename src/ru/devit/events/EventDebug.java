@@ -3,6 +3,7 @@ package ru.devit.events;
 import ru.devit.Users;
 import ru.devit.gameObjects.Resources;
 
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -28,25 +29,26 @@ public class EventDebug {
         out.println();
         out.println(step.getDescription());
         int i = 0;
-        for ( HashMap opt : step.getOptions() ) {
+        for ( Event.Stepping.Option opt : step.getOptions() ) {
             i++;
-            out.println( i + ". " +opt.get("txt") );
+            out.println( i + ". " +opt.getTxt() );
         }
 
         int answer = getAnswer()-1;
 
-        HashMap opt = step.getOption(answer);
-        Resources res = (Resources) opt.get("resources");
+        Event.Stepping.Option opt = step.getOption(answer);
+        Resources res = opt.getResources();
         if ( res.getNeedInput() == true ) {
             for (Map.Entry<String, Resources.Resource> entry : res.getAllResources().entrySet() ) {
                 if ( entry.getValue().getCount() == -1 ) {
                     res.getResource(entry.getKey()).setCount( getResourceCount( "Введите кол-во ресурса (" + res.getResource(entry.getKey()).getName() + ")" ) );
                 }
             }
-            event.setStep(answer);
-        } else {
-            event.setStep(answer);
         }
+
+        if (event.nextStep(answer) == true)
+            return;
+
         step();
     }
 
