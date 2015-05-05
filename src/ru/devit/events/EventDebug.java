@@ -53,6 +53,7 @@ public class EventDebug {
     }
 
     private static int getAnswer(){
+        out.print("Ваш выбор: ");
         Scanner in = new Scanner(System.in);
         int ret = in.nextInt();
         return ret;

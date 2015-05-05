@@ -19,7 +19,7 @@ public abstract class Event {
     //выбранные шаги
     protected ArrayList<Integer> steps = new ArrayList<Integer>();
     //массив событий квеста
-    protected List<Stepping> stepping = new ArrayList<Stepping>();
+    protected HashMap<Integer, Stepping> stepping = new HashMap<Integer, Stepping>();
     //игрок
     protected User user = null;
     protected final Random random = new Random();
@@ -89,7 +89,7 @@ public abstract class Event {
      */
     public void addStep(Stepping step)
     {
-        stepping.add(step.getStep(), step);
+        stepping.put(step.getStep(), step);
     }
 
 
@@ -180,6 +180,11 @@ public abstract class Event {
             option.setGotoStep(goToStep);
             option.setResources(res);
             options.add(option);
+        }
+
+        public void removeOption (int index)
+        {
+            options.remove(index);
         }
 
         public Option getOption( int option )
