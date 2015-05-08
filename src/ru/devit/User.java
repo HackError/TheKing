@@ -54,7 +54,7 @@ public class User {
         return userResources;
     }
 
-    public float getUserResourceByRes( String resource )
+    public float getUserResourceByName( String resource )
     {
         switch (resource) {
             case "wood" : return userResources.getWood();

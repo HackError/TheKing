@@ -5,6 +5,7 @@ import ru.devit.DB.DB_UserData;
 import ru.devit.DB.MyBatisConnectionFactory;
 import ru.devit.DB.UserDAO;
 import ru.devit.JSONparser.Request;
+import ru.devit.Server;
 import ru.devit.User;
 import ru.devit.Users;
 
@@ -25,7 +26,7 @@ public class Authorization {
         ud = userDAO.selectUserByLP(ud);
 
         if (ud != null && ud.getId() > 0) {
-            User user = Users.getUserForId(ud.getId());
+            User user = Server.getUsers().getUserForId(ud.getId());
             user.setCtx(ctx);
             user.setAuthorize(1);
             user.getUserData().setIs_online(1);

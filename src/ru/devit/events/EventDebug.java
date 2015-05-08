@@ -16,11 +16,10 @@ import static java.lang.System.out;
 public class EventDebug {
 
     static Event event = null;
+    static Users users = new Users();
 
     public static void main(String [] args){
-        //загрузка пользователей
-        Users.getAllUsersFromDB();
-        event = new TestEvent(Users.getUserForId(11));
+        event = new TestEvent(users.getUserForId(11));
         step();
     }
 

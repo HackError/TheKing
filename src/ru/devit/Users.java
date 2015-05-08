@@ -14,32 +14,35 @@ import java.util.Map;
  * Created by user on 23.04.2015.
  */
 public class Users {
-    private static Map<Integer, User> users = new HashMap<Integer, User>();
+
+    private Map<Integer, User> users = new HashMap<Integer, User>();
 
     /**
      * загрузка всех пользователей из БД
      */
-    public static void getAllUsersFromDB()
+    public Users()
     {
-        UserDAO userDAO = new UserDAO(MyBatisConnectionFactory.getSqlSessionFactory());
-        List<DB_UserData> usersData = userDAO.selectAllUsers();
-        for (DB_UserData ud: usersData){
-            DB_UserResources ur = userDAO.getUserResources(ud.getId());
-            DB_UserPeasantWork upw = userDAO.getUserPW(ud.getId());
-            User user = new User();
-            user.setUserData(ud);
-            user.setUserResources(ur);
-            user.setUserPeasantWork(upw);
-            addUser(user);
-            System.out.printf("User %s loaded", user.getUserData().getName());
-            System.out.println();
+        if ( users.isEmpty() ) {
+            UserDAO userDAO = new UserDAO(MyBatisConnectionFactory.getSqlSessionFactory());
+            List<DB_UserData> usersData = userDAO.selectAllUsers();
+            for (DB_UserData ud: usersData){
+                DB_UserResources ur = userDAO.getUserResources(ud.getId());
+                DB_UserPeasantWork upw = userDAO.getUserPW(ud.getId());
+                User user = new User();
+                user.setUserData(ud);
+                user.setUserResources(ur);
+                user.setUserPeasantWork(upw);
+                addUser(user);
+                System.out.printf("User %s loaded", user.getUserData().getName());
+                System.out.println();
+            }
         }
     }
     /**
      * Добавление нового пользователя в карту пользователей
      * @param user
      */
-    public static void addUser( User user )
+    public void addUser( User user )
     {
         users.put(user.getUserData().getId(), user);
     }
@@ -49,7 +52,7 @@ public class Users {
      * @param id
      * @return
      */
-    public static User getUserForId(Integer id)
+    public User getUserForId(Integer id)
     {
         return users.get(id);
     }
@@ -59,7 +62,7 @@ public class Users {
      * @param hashCode
      * @return
      */
-    public static User getUser(int hashCode)
+    public User getUser(int hashCode)
     {
         for ( Map.Entry<Integer, User> entry: users.entrySet() ) {
             if (entry.getValue().getHashCode() == hashCode) {
@@ -69,12 +72,17 @@ public class Users {
         return null;
     }
 
+    public Map<Integer, User> getUsers()
+    {
+        return users;
+    }
+
     /**
      * Берем соединение пользователя по хэшкоду
      * @param hashCode
      * @return
      */
-    public static ChannelHandlerContext getCtx(int hashCode)
+    public ChannelHandlerContext getCtx(int hashCode)
     {
         for ( Map.Entry<Integer, User> entry: users.entrySet() ) {
             if (entry.getValue().getHashCode() == hashCode)
@@ -87,7 +95,7 @@ public class Users {
      * Отключение пользователя
      * @param hashCode
      */
-    public static void setUserOffline (int hashCode) {
+    public void setUserOffline (int hashCode) {
         User user = getUser(hashCode);
         if ( user != null ) {
             user.setAuthorize(0);

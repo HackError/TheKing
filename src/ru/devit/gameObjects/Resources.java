@@ -12,41 +12,35 @@ public class Resources {
 
     public Resources()
     {
-        setResource(new Resource("дерево", "wood"));
-        setResource(new Resource("золото", "gold"));
-        setResource(new Resource("зерно", "grain"));
-        setResource(new Resource("крестьяне", "peasant"));
-        setResource(new Resource("солдаты", "soldiers"));
+        initResources();
     }
     public Resources(String res, float count)
     {
-        setResource(new Resource("дерево", "wood"));
-        setResource(new Resource("золото", "gold"));
-        setResource(new Resource("зерно", "grain"));
-        setResource(new Resource("крестьяне", "peasant"));
-        setResource(new Resource("солдаты", "soldiers"));
+        initResources();
         getResource(res).setCount(count);
     }
     public Resources(String res, float count, String res2, float count2)
     {
-        setResource(new Resource("дерево", "wood"));
-        setResource(new Resource("золото", "gold"));
-        setResource(new Resource("зерно", "grain"));
-        setResource(new Resource("крестьяне", "peasant"));
-        setResource(new Resource("солдаты", "soldiers"));
+        initResources();
         getResource(res).setCount(count);
         getResource(res2).setCount(count2);
     }
     public Resources(String res, float count, String res2, float count2, String res3, float count3)
     {
+        initResources();
+        getResource(res).setCount(count);
+        getResource(res2).setCount(count2);
+        getResource(res3).setCount(count3);
+    }
+
+    private void initResources()
+    {
         setResource(new Resource("дерево", "wood"));
         setResource(new Resource("золото", "gold"));
         setResource(new Resource("зерно", "grain"));
         setResource(new Resource("крестьяне", "peasant"));
         setResource(new Resource("солдаты", "soldiers"));
-        getResource(res).setCount(count);
-        getResource(res2).setCount(count2);
-        getResource(res3).setCount(count3);
+        setResource(new Resource("деньги", "money"));
     }
 
     public void setResource(Resource res)
@@ -57,6 +51,7 @@ public class Resources {
     {
         return resources.get(key);
     }
+
     public HashMap<String, Resource> getAllResources()
     {
         return resources;
@@ -70,6 +65,43 @@ public class Resources {
                 ret = true;
         }
         return ret;
+    }
+
+    public void setWood(Float wood) {
+        resources.get("wood").setCount(wood);
+    }
+    public void setGold(Float gold) {
+        resources.get("gold").setCount(gold);
+    }
+    public void setGrain(Float grain) {
+        resources.get("grain").setCount(grain);
+    }
+    public void setPeasant(Float peasant) {
+        resources.get("peasant").setCount(peasant);
+    }
+    public void setSoldiers(Float soldiers) {
+        resources.get("soldiers").setCount(soldiers);
+    }
+    public void setMoney(Float money) {
+        resources.get("money").setCount(money);
+    }
+    public Float getWood(){
+        return resources.get("wood").getCount();
+    }
+    public Float getGold(){
+        return resources.get("gold").getCount();
+    }
+    public Float getGrain(){
+        return resources.get("grain").getCount();
+    }
+    public Float getPeasant(){
+        return resources.get("peasant").getCount();
+    }
+    public Float getSoldiers(){
+        return resources.get("soldiers").getCount();
+    }
+    public Float getMoney(){
+        return resources.get("money").getCount();
     }
 
     public class Resource {

@@ -1,6 +1,5 @@
 package ru.devit.network;
 
-import com.sun.javafx.tk.Toolkit;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.*;
@@ -20,10 +19,11 @@ import static io.netty.handler.codec.http.HttpVersion.HTTP_1_1;
 
 import ru.devit.JSONparser.Converter;
 import ru.devit.JSONparser.Request;
-import ru.devit.Users;
+import ru.devit.Server;
 import ru.devit.requestAnalizator.AnalizeRequest;
-
 import java.io.IOException;
+
+import static ru.devit.Users.*;
 
 
 /**
@@ -51,7 +51,7 @@ public class WebSocketServerHandler extends SimpleChannelInboundHandler<Object> 
     @Override
     public void handlerRemoved( ChannelHandlerContext ctx ) throws Exception
     {
-        Users.setUserOffline(ctx.hashCode());
+        Server.getUsers().setUserOffline(ctx.hashCode());
         channels.remove(ctx.channel());
     }
 

@@ -53,14 +53,19 @@ public abstract class Event {
      */
     public boolean nextStep(int answer)
     {
-        steps.add(step);
-        if ( stepping.get(this.step).getOptions().size() >= answer ) {
-            stepping.get(this.step).setAnswer(answer);
-            this.step = stepping.get(this.step).getOption(answer).getGotoStep();
+        if ( answer > -1 ) {
+            //
+            steps.add(step);
+            if (stepping.get(this.step).getOptions().size() >= answer) {
+                stepping.get(this.step).setAnswer(answer);
+                this.step = stepping.get(this.step).getOption(answer).getGotoStep();
+            }
         }
+
         if ( this.step == -100 ) {
             return true;
         }
+
         return false;
     }
 
@@ -95,7 +100,7 @@ public abstract class Event {
 
 
     /**
-     * Класс шага
+     * КЛАСС ОПИСАНИЯ ШАГОВ
      */
     protected class Stepping {
         private ArrayList<Option> options = new ArrayList<Option>();
@@ -196,6 +201,7 @@ public abstract class Event {
         {
             return options;
         }
+
 
         /**
          * КЛАСС ОПЦИЙ ШАГА
