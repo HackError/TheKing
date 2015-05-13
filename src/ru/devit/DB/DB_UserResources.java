@@ -76,4 +76,17 @@ public class DB_UserResources {
     public void setMood(Float mood) {
         this.mood = mood;
     }
+
+    @Override
+    public String toString()
+    {
+        String s = "user_id: " + user_id + "\n";
+        s += "gold: " + gold + "\n";
+        s += "grain: " + grain + "\n";
+        s += "wood: " + wood + "\n";
+        s += "peasant: " + peasant + "\n";
+        s += "soldiers: " + soldiers + "\n";
+        s += "money: " + money + "\n";
+        return s;
+    }
 }

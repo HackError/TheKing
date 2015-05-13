@@ -7,6 +7,8 @@ import java.util.TimerTask;
  */
 public class TimerGameTurn {
 
+    static long time = 10;
+
     public static void start()
     {
         java.util.Timer timer = new java.util.Timer();
@@ -17,7 +19,7 @@ public class TimerGameTurn {
                 GameLogic.turn();
             }
         };
-        timer.schedule( task, 0L, 60L * 1000 );
+        timer.schedule( task, time*1000, time * 1000 );
     }
 
 }

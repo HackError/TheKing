@@ -1,5 +1,7 @@
 package ru.devit.gameObjects;
 
+import ru.devit.DB.DB_UserResources;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,21 +12,48 @@ public class Resources {
 
     HashMap<String,Resource> resources = new HashMap<String, Resource>();
 
+    /**
+     * СТАНДАРТНЫЙ КОНСТРУКТОР БЕЗ УСТАНОВКИ РЕСУРСОВ
+     */
     public Resources()
     {
         initResources();
     }
+
+    /**
+     * УСТАНОВКА 1ГО РЕСУРСА
+     * @param res
+     * @param count
+     */
     public Resources(String res, float count)
     {
         initResources();
         getResource(res).setCount(count);
     }
+
+    /**
+     * УСТАНОВКА 2Х РЕСУРСОВ
+     * @param res
+     * @param count
+     * @param res2
+     * @param count2
+     */
     public Resources(String res, float count, String res2, float count2)
     {
         initResources();
         getResource(res).setCount(count);
         getResource(res2).setCount(count2);
     }
+
+    /**
+     * УСТАНОВКА 3Х РЕСУРСОВ
+     * @param res
+     * @param count
+     * @param res2
+     * @param count2
+     * @param res3
+     * @param count3
+     */
     public Resources(String res, float count, String res2, float count2, String res3, float count3)
     {
         initResources();
@@ -33,6 +62,24 @@ public class Resources {
         getResource(res3).setCount(count3);
     }
 
+    /**
+     * КОНВЕРТАЦИЯ ИЗ БД
+     * @param db_userResources
+     */
+    public Resources ( DB_UserResources db_userResources)
+    {
+        initResources();
+        setGrain( db_userResources.getGrain() );
+        setMoney( db_userResources.getMoney() );
+        setSoldiers( db_userResources.getSoldiers() );
+        setGold( db_userResources.getGold() );
+        setPeasant( db_userResources.getPeasant() );
+        setWood( db_userResources.getWood() );
+    }
+
+    /**
+     * ИНИЦИАЛИЗАЦИЯ РЕСУРСОВ
+     */
     private void initResources()
     {
         setResource(new Resource("дерево", "wood"));
@@ -43,20 +90,39 @@ public class Resources {
         setResource(new Resource("деньги", "money"));
     }
 
+
+    /**
+     * утсановка кол-ва ресурса
+     * @param res
+     */
     public void setResource(Resource res)
     {
         resources.put(res.getKey(), res);
     }
+
+    /**
+     * взять ресурс
+     * @param key
+     * @return
+     */
     public Resource getResource(String key)
     {
         return resources.get(key);
     }
 
+    /**
+     * взять все ресурсы
+     * @return
+     */
     public HashMap<String, Resource> getAllResources()
     {
         return resources;
     }
 
+    /**
+     * взять ресурсы с параметром необходимым к вводу пользователя (-1)
+     * @return
+     */
     public boolean getNeedInput()
     {
         boolean ret = false;
@@ -104,6 +170,9 @@ public class Resources {
         return resources.get("money").getCount();
     }
 
+    /**
+     * КЛАСС РЕСУРСА
+     */
     public class Resource {
 
         private String name = "";

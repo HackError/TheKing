@@ -28,17 +28,61 @@ public class GameConfig {
     public Calendar getDate()
     {
         String date = (String)getConfigParam("GAME_DATE");
-        System.out.println(date);
         String[] ds = date.split("\\-");
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        //SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         Calendar calendar = new GregorianCalendar(Integer.parseInt(ds[0]), Integer.parseInt(ds[1])-1, Integer.parseInt(ds[2]));
-        System.out.println(sdf.format(calendar.getTime()));
         return calendar;
     }
 
     public void setDate( Calendar date )
     {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        config.put("GAME_DATE", sdf.format(date.getTime()));
+        config.get("GAME_DATE").put("value", sdf.format(date.getTime()));
+        System.out.println(sdf.format(date.getTime()));
+    }
+
+    public float getGrainRegeneration ()
+    {
+        return Float.parseFloat( (String)getConfigParam("GRAIN_REGENERATION") );
+    }
+
+    public float getWoodRegeneration ()
+    {
+        return Float.parseFloat( (String)getConfigParam("WOOD_REGENERATION") );
+    }
+
+    public float getGoldRegeneration ()
+    {
+        return Float.parseFloat( (String)getConfigParam("GOLD_REGENERATION") );
+    }
+
+    public float getGrainEatingPeasant ()
+    {
+        return Float.parseFloat( (String)getConfigParam("GRAIN_EATING_PEASANT") );
+    }
+
+    public float getGrainEatingSoldier ()
+    {
+        return Float.parseFloat( (String)getConfigParam("GRAIN_EATING_SOLDIER") );
+    }
+
+    public float getGoldPaySoldier ()
+    {
+        return Float.parseFloat( (String)getConfigParam("GOLD_PAY_SOLDIER") );
+    }
+
+    public float getPeasantGrowth ()
+    {
+        return Float.parseFloat( (String)getConfigParam("PEASANT_GROWTH") );
+    }
+
+    public float getPeasantOnGround ()
+    {
+        return Float.parseFloat( (String)getConfigParam("PEASANT_ON_GROUND") );
+    }
+
+    public float getPeasantDieOnHunger ()
+    {
+        return Float.parseFloat( (String)getConfigParam("PEASANT_DIE_ON_HUNGER") );
     }
 }
