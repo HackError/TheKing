@@ -6,12 +6,12 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
  * Created by user on 23.04.2015.
  */
 public class DB_UserData {
-    private int id = 0;
+    private int id = -1;
     private String email;
     @JsonIgnore
     private String pwd;
     private String name;
-    private int reg_date;
+    private String reg_date;
     private String last_logon;
     private int is_online;
     private String avatar;
@@ -48,11 +48,11 @@ public class DB_UserData {
         this.name = name;
     }
 
-    public int getReg_date() {
+    public String getReg_date() {
         return reg_date;
     }
 
-    public void setReg_date(int reg_date) {
+    public void setReg_date(String reg_date) {
         this.reg_date = reg_date;
     }
 

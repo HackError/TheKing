@@ -4,8 +4,6 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.http.websocketx.TextWebSocketFrame;
-import ru.devit.DB.ConfigDAO;
-import ru.devit.DB.MyBatisConnectionFactory;
 import ru.devit.JSONparser.Converter;
 import ru.devit.JSONparser.Request;
 import ru.devit.gameLogic.TimerGameTurn;
@@ -18,12 +16,12 @@ import java.util.HashMap;
  */
 public class Server {
 
-    private static GameConfig gameConfig = new GameConfig();
-    private static GameMap gameMap = new GameMap();
-    private static Users users = new Users();
+    public static final GameConfig gameConfig = new GameConfig();
+    public static final GameMap gameMap = new GameMap();
+    public static final Users users = new Users();
 
     public static void init() {
-
+        /*
         Thread gameLogic = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -32,6 +30,8 @@ public class Server {
         });
 
         gameLogic.start();
+        */
+        TimerGameTurn.start();
 
         //открываем сокет
         try {

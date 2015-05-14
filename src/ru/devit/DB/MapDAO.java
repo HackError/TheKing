@@ -27,6 +27,17 @@ public class MapDAO {
         return list;
     }
 
+    public void updateMap(DB_Map db_map){
+        SqlSession session = sqlSessionFactory.openSession();
+        try {
+            session.update("DBMap.update", db_map);
+        } finally {
+            session.commit();
+            session.close();
+        }
+        System.out.println("update map("+db_map.getId()+") --> updated");
+    }
+
 
 
 }

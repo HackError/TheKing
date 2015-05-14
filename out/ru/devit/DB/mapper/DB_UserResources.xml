@@ -25,6 +25,7 @@
 
     <update id="update" parameterType="ru.devit.DB.DB_UserResources">
         UPDATE user_resources
+        SET
         `gold` = #{gold},
         `grain` = #{grain},
         `wood` = #{wood},
@@ -32,7 +33,7 @@
         `soldiers` = #{soldiers},
         `money` = #{money},
         `mood` = #{mood}
-        WHERE user_id = #{id}
+        WHERE user_id = #{user_id}
     </update>
 
 </mapper>

@@ -24,7 +24,7 @@
         `gold` = #{gold},
         `grain` = #{grain},
         `wood` = #{wood},
-        WHERE user_id = #{id}
+        WHERE user_id = #{user_id}
     </update>
 
 </mapper>

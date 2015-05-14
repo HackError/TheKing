@@ -26,15 +26,15 @@ public class Users {
             UserDAO userDAO = new UserDAO(MyBatisConnectionFactory.getSqlSessionFactory());
             List<DB_UserData> usersData = userDAO.selectAllUsers();
             for (DB_UserData ud: usersData){
-                DB_UserResources ur = userDAO.getUserResources(ud.getId());
-                DB_UserPeasantWork upw = userDAO.getUserPW(ud.getId());
-                User user = new User();
-                user.setUserData(ud);
-                user.setUserResources(ur);
-                user.setUserPeasantWork(upw);
+                User user = new User(ud, userDAO.getUserResources(ud.getId()), userDAO.getUserPW(ud.getId()));
                 addUser(user);
                 System.out.printf("User %s loaded", user.getUserData().getName());
                 System.out.println();
+                try {
+                    System.out.println( user.toJSON() );
+                } catch (JsonProcessingException e) {
+                    e.printStackTrace();
+                }
             }
         }
     }
@@ -98,12 +98,11 @@ public class Users {
     public void setUserOffline (int hashCode) {
         User user = getUser(hashCode);
         if ( user != null ) {
-            user.setAuthorize(0);
+            user.setAuthorize(false);
             user.setHashCode(0);
             user.getUserData().setIs_online(0);
             //user.setCtx(null);
             System.out.println(user + " is offline");
         }
-
     }
 }

@@ -10,34 +10,42 @@ import ru.devit.User;
  */
 public class ResourceCalculator {
 
-    Resources resources = null;
-    User user = null;
-    GameConfig gameConfig = null;
+    private static Resources resources = null;
+    private static User user = null;
+    private static GameConfig gameConfig = null;
 
+    /*
     public ResourceCalculator( User user)
     {
         this.user = user;
         resources = new Resources(user.getUserResources());
         this.gameConfig = Server.getGameConfig();
     }
+    */
 
-    public void calc()
+    public static void calc( User user )
     {
+        ResourceCalculator.user = user;
+        resources = new Resources(user.getUserResources());
+        gameConfig = Server.getGameConfig();
         user.getUserResources().setGrain( calcGrain() );
         user.getUserResources().setWood(calcWood());
         user.getUserResources().setGold(calcGold());
+        ResourceCalculator.user = null;
+        resources = null;
+        gameConfig = null;
     }
 
     /**
      * калькуляция прироста пшеницы за ход
      * TODO: необходимо сделать зависимость от размера имеющейся земли у игрока и кол-ва выделенных крестьян на обработку земли
      */
-    private Float calcGrain()
+    private static Float calcGrain()
     {
         //кол-во зерна генерируемого 1 крестьянином за ход
-        Float grReg = gameConfig.getGrainRegeneration();
+        float grReg = gameConfig.getGrainRegeneration();
         //кол-во имеющегося зерна
-        Float grain = resources.getGrain();
+        float grain = resources.getGrain();
         //кол-во крестьян задействованных в обработке земли
         int userPeasantInWork = user.getUserPeasantWork().getGrain();
         //общее кол-во крестьян
@@ -52,19 +60,19 @@ public class ResourceCalculator {
         return grain + ( userPeasantInWork * grReg ) - ( peasant * peasantEatGrain ) - ( soldiers * soldierEatGrain );
     }
 
-    private Float calcWood()
+    private static Float calcWood()
     {
-        Float woodReg = gameConfig.getWoodRegeneration();
-        Float wood = resources.getWood();
+        float woodReg = gameConfig.getWoodRegeneration();
+        float wood = resources.getWood();
         int userPeasantInWork = user.getUserPeasantWork().getWood();
 
         return wood + ( userPeasantInWork * woodReg );
     }
 
-    private Float calcGold()
+    private static Float calcGold()
     {
-        Float goldReg = gameConfig.getGoldRegeneration();
-        Float gold = resources.getGold();
+        float goldReg = gameConfig.getGoldRegeneration();
+        float gold = resources.getGold();
         int userPeasantInWork = user.getUserPeasantWork().getGold();
 
         return gold + ( userPeasantInWork * goldReg );

@@ -27,8 +27,17 @@
 
     <update id="update" parameterType="DBMap">
         UPDATE grounds
-
-        WHERE user_id = #{id}
+        SET
+        `x` = #{x},
+        `y` = #{y},
+        `owner` = #{owner},
+        `start_position` = #{start_position},
+        `ground_type` = #{ground_type},
+        `server` = #{server},
+        `non_user_owner` = #{non_user_owner},
+        `class` = #{style_class},
+        `passability` = #{passability}
+        WHERE `id` = #{id}
     </update>
 
 </mapper>

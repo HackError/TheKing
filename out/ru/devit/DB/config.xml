@@ -16,7 +16,7 @@
             <!--  connecting to Local MySql -->
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://devit.ru:3306/the_king"/>
+                <property name="url" value="jdbc:mysql://devit.ru:3306/the_king?autoreconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF8&amp;mysqlEncoding=UTF8"/>
                 <property name="username" value="king"/>
                 <property name="password" value="GtnhGthdsq"/>
             </dataSource>

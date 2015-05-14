@@ -28,7 +28,7 @@ public class Authorization {
         if (ud != null && ud.getId() > 0) {
             User user = Server.getUsers().getUserForId(ud.getId());
             user.setCtx(ctx);
-            user.setAuthorize(1);
+            user.setAuthorize(true);
             user.getUserData().setIs_online(1);
             System.out.printf("%s is authorize", user);
             data.put("auth", 1);

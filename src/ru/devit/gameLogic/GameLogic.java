@@ -1,10 +1,12 @@
 package ru.devit.gameLogic;
 
 import ru.devit.DB.DB_UserResources;
+import ru.devit.DB.SaveToDB;
 import ru.devit.Server;
 import ru.devit.User;
 import ru.devit.gameObjects.ResourceCalculator;
 import ru.devit.gameObjects.Resources;
+import ru.devit.map.GameMap;
 
 import java.util.Calendar;
 import java.util.Map;
@@ -28,23 +30,11 @@ public class GameLogic {
         for ( Integer key : users.keySet() ) {
             User user = users.get(key);
 
-            ResourceCalculator rc = new ResourceCalculator( user );
-            rc.calc();
+            ResourceCalculator.calc(user);
 
             System.out.println(user.getUserData().getName());
             System.out.println(user.getUserResources());
         }
-    }
-
-    /**
-     * КАЛЬКУЛЯЦИЯ ПРИРОСТА РЕСУРСОВ ИГРОКА
-     * @param user
-     */
-    private static void userResourceCalc( User user )
-    {
-        DB_UserResources res = user.getUserResources();
-        Resources resources = new Resources( res );
-
     }
 
 }

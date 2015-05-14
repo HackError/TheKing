@@ -71,10 +71,26 @@ public class Resources {
         initResources();
         setGrain( db_userResources.getGrain() );
         setMoney( db_userResources.getMoney() );
-        setSoldiers( db_userResources.getSoldiers() );
-        setGold( db_userResources.getGold() );
-        setPeasant( db_userResources.getPeasant() );
-        setWood( db_userResources.getWood() );
+        setSoldiers(db_userResources.getSoldiers());
+        setGold(db_userResources.getGold());
+        setPeasant(db_userResources.getPeasant());
+        setWood(db_userResources.getWood());
+    }
+
+    /**
+     * Конвертирование в БД
+     * @return
+     */
+    public DB_UserResources convertToDB ()
+    {
+        DB_UserResources dbu = new DB_UserResources();
+        dbu.setGold(getGold());
+        dbu.setGrain(getGrain());
+        dbu.setMoney(getMoney());
+        dbu.setPeasant(getPeasant());
+        dbu.setSoldiers(getSoldiers());
+        dbu.setWood(getWood());
+        return dbu;
     }
 
     /**

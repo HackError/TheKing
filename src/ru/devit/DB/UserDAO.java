@@ -82,20 +82,20 @@ public class UserDAO {
      * Update an instance of Person into the database.
      * @param user the instance to be persisted.
      */
-    public void updateUser(DB_UserData user){
+    public void updateUser(User user){
         int id = -1;
         SqlSession session = sqlSessionFactory.openSession();
 
         try {
-            id = session.update("UserData.update", user);
-
+            session.update("UserData.update", user.getUserData());
+            session.update("userResources.update", user.getUserResources());
+            session.update("userPW.update", user.getUserPeasantWork());
         } finally {
             session.commit();
             session.close();
         }
         System.out.println("update("+user+") --> updated");
     }
-
     /**
      * Delete an instance of Person from the database.
      * @param id value of the instance to be deleted.
@@ -115,7 +115,7 @@ public class UserDAO {
     }
 
     /**
-     * загрузка пользовательских ресурсов
+     *
      * @param uid
      * @return
      */
@@ -132,7 +132,7 @@ public class UserDAO {
     }
 
     /**
-     * загрузка распределения крестьян по работам
+     *
      * @param uid
      * @return
      */

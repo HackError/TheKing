@@ -3,6 +3,8 @@ package ru.devit.map;
 import ru.devit.DB.DB_Map;
 import ru.devit.DB.MapDAO;
 import ru.devit.DB.MyBatisConnectionFactory;
+import ru.devit.Server;
+import ru.devit.User;
 
 import java.util.HashMap;
 import java.util.List;
@@ -12,14 +14,16 @@ import java.util.List;
  */
 public class GameMap {
 
-    private HashMap map = new HashMap<Integer, DB_Map>();
-    private static Integer mapWidth = 0;
+    private HashMap<Integer, DB_Map> map = new HashMap<Integer, DB_Map>();
+    private static int mapWidth = 0;
 
     public GameMap(){
         /*загрузка карты*/
         MapDAO mapDAO = new MapDAO(MyBatisConnectionFactory.getSqlSessionFactory());
         List<DB_Map> listMap = mapDAO.selectAll();
-        getMapWidth(listMap);
+
+        setMapWidth(listMap);
+
         for (DB_Map m : listMap) {
             int node = GameMap.node(m.getX(), m.getY());
             map.put(node, m);
@@ -33,19 +37,20 @@ public class GameMap {
         return map;
     }
 
-    private static Integer getMapWidth (List<DB_Map> listMap)
+    public DB_Map getMap( int node )
     {
-        if (mapWidth > 0)
-            return mapWidth;
+        return map.get( node );
+    }
 
+    private static void setMapWidth ( List<DB_Map> listMap )
+    {
         for (DB_Map m : listMap) {
             if ( m.getX() > mapWidth )
                 mapWidth = m.getX();
         }
         mapWidth++;
-
-        return mapWidth;
     }
+
     public static Integer getMapWidth()
     {
         return mapWidth;
@@ -75,5 +80,18 @@ public class GameMap {
         return new int[]{x, y};
     }
 
+
+    /**
+     * ЗАХВАТ ЗЕМЛИ ПОЛЬЗОВАТЕЛЕМ
+     * @param userID
+     * @param node
+     */
+    public void userTakeGround( int userID, int node )
+    {
+        DB_Map db_map = getMap(node);
+        db_map.setOwner(userID);
+        MapDAO mapDAO = new MapDAO(MyBatisConnectionFactory.getSqlSessionFactory());
+        mapDAO.updateMap(db_map);
+    }
 
 }

@@ -30,12 +30,13 @@
     </select>
 
     <insert id="insert" parameterType="ru.devit.DB.DB_UserData" useGeneratedKeys="true" keyProperty="id">
-        INSERT INTO users (name) VALUES (#{name});
+        INSERT INTO users (email, name, reg_date, last_logon, is_online, avatar)
+        VALUES ( #{email}, #{name}, #{reg_date}, #{last_logon}, #{is_online}, #{avatar} );
     </insert>
 
     <update id="update" parameterType="ru.devit.DB.DB_UserData">
         UPDATE users
-        SET name = #{name}
+        SET email = #{email}, name = #{name}, reg_date = #{reg_date}, last_logon = #{last_logon}, is_online = #{is_online}, avatar = #{avatar}
         WHERE id = #{id}
     </update>
 
